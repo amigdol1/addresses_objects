@@ -18,6 +18,7 @@ Address.prototype.fullAddress = function() {
   return this.street + ", " + this.city + ", " + this.state;
 }
 
+
 $(document).ready(function() {
   $("#add-address").click(function() {
     $("#new-addresses").append('<div class="new-address">' +
@@ -77,5 +78,8 @@ $(document).ready(function() {
       $("input.new-city").val("");
       $("input.new-state").val("");
     }
+
+    // $("div").not(".new-street")
+      //.css("font-size", "50px");
   });
 });
